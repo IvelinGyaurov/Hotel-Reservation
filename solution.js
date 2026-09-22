@@ -22,6 +22,23 @@ function cleanData(e) {
     changeContent('search-form-content');
 }
 
+confirm-reservation-form
+document.querySelector('#confirm-back-btn').addEventListener('click', (e) => getBackToPersonalData(e));
+
+function getBackToPersonalData(e) {
+    e.preventDefault();
+    changeContent('guest-details-form-content');
+}
+
+
+document.querySelector('#confirm-reservation').addEventListener('click', (e) => showThanksPage(e));
+
+function showThanksPage(e) {
+    e.preventDefault();
+    changeContent('thank-you-content');
+}
+
+
 search-form
 changeContent('search-form-content');
 document.querySelector('#search-form-button').addEventListener('click', (e) => searchFormData(e));
@@ -80,3 +97,4 @@ function findRoom(e) {
 
  main
 }
+ main
